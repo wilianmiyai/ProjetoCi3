@@ -56,11 +56,11 @@
                     'carro/editar/' .
                     $car->idCarro;
                     ?>">Editar</a> | 
-                    <a href="<?php
-                    echo base_url() .
-                    'carro/excluir/' .
-                    $car->idCarro;
-                    ?>">Deletar</a>
+                    <?php if  ($this->session->userdata('logado')->perfilAcesso!='user') {?>
+                            <a href="<?php echo base_url() . 
+                                    'carro/excluir/' . 
+                                    $car->idCarro; ?>">Deletar</a>
+                            <?php } ?>
                 </td>
             </tr>
         <?php endforeach; ?>

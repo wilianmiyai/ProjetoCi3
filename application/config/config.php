@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 //$config['base_url'] = 'http://localhost/tProjetoCI3/';
-$config['base_url'] = 'http://wilianmiyai-com-br.umbler.net';
+$config['base_url'] = 'http://wilianmiyai-com-br.umbler.net/ProjetoCi3/';
 /*
 |--------------------------------------------------------------------------
 | Index File

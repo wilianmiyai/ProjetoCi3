@@ -43,11 +43,11 @@
                     'pessoa/editar/' .
                     $pes->idPessoa;
                     ?>">Editar</a> | 
-                    <a href="<?php
-                    echo base_url() .
-                    'pessoa/excluir/' .
-                    $pes->idPessoa;
-                    ?>">Deletar</a>
+                    <?php if  ($this->session->userdata('logado')->perfilAcesso!='user') {?>
+                            <a href="<?php echo base_url() . 
+                                    'pessoa/excluir/' . 
+                                    $pessoa->idPessoa; ?>">Deletar</a>
+                            <?php } ?>
                 </td>
             </tr>
         <?php endforeach; ?>
