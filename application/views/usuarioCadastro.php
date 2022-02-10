@@ -10,7 +10,7 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        |<a class="linkdescr" href="<?php echo base_url() . 'home'; ?>"> Home</a>
+        |cd<a class="linkdescr" href="<?php echo base_url() . 'home'; ?>"> Home</a>
         <h1>Cadastro de Usuário</h1>
         <?php echo form_open('usuario/inserir'); ?>
             <input class="form-control" type="text" required name="nomeUsuario" placeholder="Nome aqui..." />
