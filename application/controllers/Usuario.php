@@ -16,7 +16,9 @@ class Usuario extends CI_Controller {
 
     public function index() {
         $lista['users'] = $this->user->listar();
+        $this->load->view('template/header');
         $this->load->view('usuarioCadastro', $lista);
+        $this->load->view('template/footer');
     }
 
     public function inserir() {
