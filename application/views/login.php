@@ -1,7 +1,13 @@
-<body style="background-image: url(img/4.jpg); 
-      background-repeat: no-repeat; 
-      background-attachment: fixed;
-      background-size: 100%;">
+<body style="background-image: url(img/4.jpg);
+          display: block;
+          width: 100%;
+          height: 100vh;
+          padding: 100px 0;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: 30% 45%;">
+
 <div class="row">
     <!--Responsivo para smartphone, tablet e PC-->
     <div class="col-xs-1 col-sm-1 col-lg-3"></div>
