@@ -40,10 +40,12 @@ class Carro extends CI_Controller {
         if ($result == true)
         {
             //redireciona para o controller carro
+            $this->session->set_tempdata('msg', 'true', 5);
             redirect('carro');
         }
         else
         {
+            $this->session->set_tempdata('msg', 'err', 5);
             redirect('carro');
         }
     }
@@ -70,10 +72,12 @@ class Carro extends CI_Controller {
         if ($this->carro->atualizar($dados) == true)
         {
             //falta implementar as msgs de notificações
+            $this->session->set_tempdata('msg', 'atualizado', 5);
             redirect('carro');
         }
         else
         {
+            $this->session->set_tempdata('msg', 'erroAtualizar', 5);
             redirect('carro');
         }
     }
@@ -84,10 +88,12 @@ class Carro extends CI_Controller {
         if ($result == true)
         {
             //redireciona para o controller pessoa
+            $this->session->set_tempdata('msg', 'deletado', 5);
             redirect('carro');
         }
         else
         {
+            $this->session->set_tempdata('msg', 'erroDeletar', 5);
             redirect('carro');
         }
     }

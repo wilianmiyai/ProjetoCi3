@@ -1,4 +1,5 @@
-<body style="background-image: url(img/4.jpg);
+
+    <body style="background-image: url(img/4.jpg);
           display: block;
           width: 100%;
           height: 100vh;
