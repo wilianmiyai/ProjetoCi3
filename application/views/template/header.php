@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="container">
-           <font color="DeepSkyBlue">
+            <font color="DeepSkyBlue">
             <?php
             if ($this->session->userdata('estou_logado')) {
                 echo $this->session->userdata('logado')->nomeUsuario;
