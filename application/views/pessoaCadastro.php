@@ -34,7 +34,7 @@
 </body>
 <h2>Lista Pessoas</h2>
 <table class="table">
-    <thead class="thead-light">
+   <thead class="thead-light">
         <tr>
             <th>Nome</th><th>Telefone</th><th>E-mail</th><th>Funções</th>
         </tr>

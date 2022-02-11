@@ -29,7 +29,7 @@
 <?php echo form_close(); ?>
 <h2>Lista Carros</h2>
 <table class="table">
-    <thead class="thead-light">
+   <thead class="thead-light">
         <tr>
             <th>Modelo</th><th>Marca</th><th>Placa</th><th>Nº de portas</th><th>Cor</th><th>Proprietário</th> <th>Funções</th>
         </tr>
