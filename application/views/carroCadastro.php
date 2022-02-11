@@ -1,5 +1,5 @@
-
-<h1>Cadastro de Carro</h1>
+<body style="background-color: #DCDCDC;">
+<font face="Segoe Print"><h1>Cadastro de Carro</h1></font>
 <?php echo form_open('carro/inserir'); ?>
 <label>Proprietário</label>
 <select class="form-control" name="idPessoa" id="idPessoa">
@@ -66,3 +66,4 @@
         <?php endforeach; ?>
     </tbody>
 </table>
+</body>

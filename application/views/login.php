@@ -1,4 +1,7 @@
-
+<body style="background-image: url(img/4.jpg); 
+      background-repeat: no-repeat; 
+      background-attachment: fixed;
+      background-size: 100%">
 <div class="row">
     <!--Responsivo para smartphone, tablet e PC-->
     <div class="col-xs-1 col-sm-1 col-lg-3"></div>
@@ -20,3 +23,4 @@
     </div>
     <div class="col-xs-1 col-sm-1 col-lg-3"></div>
 </div>
+</body>

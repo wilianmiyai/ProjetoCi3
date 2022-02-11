@@ -10,10 +10,12 @@
     </head>
     <body>
         <div class="container">
+            <font color="DeepSkyBlue">
             <?php
             if ($this->session->userdata('estou_logado')) {
                 echo $this->session->userdata('logado')->nomeUsuario;
                 ?>
+                  </font>
                 | 
                 <a href="<?php echo base_url(); ?>login/sair">Sair</a> | 
                 <a href="<?php echo base_url() . 'home'; ?>">Home</a> | 

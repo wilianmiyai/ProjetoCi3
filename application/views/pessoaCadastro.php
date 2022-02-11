@@ -1,7 +1,7 @@
-
-<h1>Cadastro de Pessoa</h1>
+<body style="background-color: MintCream;">
+    <font face="Segoe Print"><h1>Cadastro de Pessoa</h1></font>
 <?php echo form_open('pessoa/inserir'); ?>
-<laber>Nome :</laber>
+<label>Nome :</label>
 <input class="form-control" type="text" required name="nome" placeholder="Nome aqui..." />
 <br><br>
 <laber>Telefone :</laber>
@@ -31,6 +31,7 @@
 <input class="btn btn-outline-success" type="submit" value="Salvar"/>
 <input class="btn btn-outline-danger" type="reset" value="Limpar"/>
 <?php echo form_close(); ?>
+</body>
 <h2>Lista Pessoas</h2>
 <table class="table">
     <thead class="thead-light">
@@ -49,16 +50,12 @@
                     echo base_url() .
                     'pessoa/editar/' .
                     $pes->idPessoa;
-                    ?>">Editar</a> | 
-                       <?php if ($this->session->userdata('logado')->perfilAcesso != 'user')
-                       {
-                           ?>
-                        <a href="<?php
-                        echo base_url() .
-                        'pessoa/excluir/' .
-                        $pessoa->idPessoa;
-                        ?>">Deletar</a>
-    <?php } ?>
+                    ?>">Editar</a> |             
+                        <?php if  ($this->session->userdata('logado')->perfilAcesso!='user') {?>
+                            <a href="<?php echo base_url() . 
+                                    'pessoa/excluir/' . 
+                                    $pes->idPessoa; ?>">Deletar</a>
+                            <?php } ?>
                 </td>
             </tr>
 <?php endforeach; ?>
